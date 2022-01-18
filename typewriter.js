@@ -1,12 +1,12 @@
 const sentence = "hello there from lighthouse labs";
-let x = 500
-let u = sentence.split('')
+let seconds = 500
+let sentenceSplit = sentence.split('')
 
-for(let i = 0; i < u.length; i++) {
-x++
+for(let i = 0; i < sentenceSplit.length; i++) {
+  seconds++
 // console.log(x)
   setTimeout(() => {
-    process.stdout.write(u[i]);
-    // process.stdout.write('\n');
-  },x += 100);
+    process.stdout.write(sentenceSplit[i]);   
+  },seconds += 100);
 };
+setTimeout(() => process.stdout.write('\n'), 4000);
